@@ -1,3 +1,3 @@
-# Volley example project
+# Frankenstein
 
-Volley example repository for the Google Developers Study Jams sessions
+Android testing project. Every developer has his monster project, I just making mine public.
