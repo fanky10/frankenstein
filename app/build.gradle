@@ -6,8 +6,8 @@ android {
     buildToolsVersion "23.0.2"
 
     defaultConfig {
-        applicationId "com.bengui.volleytest"
-        minSdkVersion 10
+        applicationId "com.bengui.frankenstein"
+        minSdkVersion 19
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"

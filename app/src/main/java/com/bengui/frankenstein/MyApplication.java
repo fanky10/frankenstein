@@ -1,4 +1,3 @@
-/* (c) Disney. All rights reserved. */
 package com.bengui.frankenstein;
 
 import android.app.Application;
@@ -17,6 +16,9 @@ public class MyApplication extends Application {
         appComponent = DaggerAppComponent.builder()
                                          .appModule(new AppModule(this))
                                          .build();
+
+        FrankensteinActivityLifecycleCallbacks frankensteinActivityLifecycleCallbacks = appComponent.getFrankensteinActivityLifecycleCallbacks();
+        registerActivityLifecycleCallbacks(frankensteinActivityLifecycleCallbacks);
     }
 
     public AppComponent getAppComponent() {

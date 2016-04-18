@@ -14,4 +14,6 @@ import dagger.Component;
 public interface AppComponent {
 
     void inject(UserFragment userFragment);
+
+    FrankensteinActivityLifecycleCallbacks getFrankensteinActivityLifecycleCallbacks();
 }

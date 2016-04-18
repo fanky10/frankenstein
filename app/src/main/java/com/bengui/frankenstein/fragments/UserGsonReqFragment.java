@@ -1,4 +1,3 @@
-/* (c) Disney. All rights reserved. */
 package com.bengui.frankenstein.fragments;
 
 import android.os.Bundle;
