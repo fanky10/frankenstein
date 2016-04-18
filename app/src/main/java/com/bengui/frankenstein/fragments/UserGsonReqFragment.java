@@ -1,5 +1,5 @@
 /* (c) Disney. All rights reserved. */
-package com.bengui.volleytest.fragments;
+package com.bengui.frankenstein.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -13,10 +13,10 @@ import android.widget.TextView;
 
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
-import com.bengui.volleytest.R;
-import com.bengui.volleytest.managers.GsonRequest;
-import com.bengui.volleytest.managers.VolleyManager;
-import com.bengui.volleytest.models.User;
+import com.bengui.frankenstein.R;
+import com.bengui.frankenstein.managers.GsonRequest;
+import com.bengui.frankenstein.managers.VolleyManager;
+import com.bengui.frankenstein.models.User;
 
 /**
  * @author benjamin.massello.

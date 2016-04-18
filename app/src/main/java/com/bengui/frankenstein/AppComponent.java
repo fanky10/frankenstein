@@ -1,6 +1,6 @@
-package com.bengui.volleytest;
+package com.bengui.frankenstein;
 
-import com.bengui.volleytest.fragments.UserFragment;
+import com.bengui.frankenstein.fragments.UserFragment;
 
 import javax.inject.Singleton;
 

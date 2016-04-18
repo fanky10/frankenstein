@@ -1,15 +1,15 @@
-package com.bengui.volleytest.activities;
+package com.bengui.frankenstein.activities;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
-import com.bengui.volleytest.fragments.ImageScreenFragment;
-import com.bengui.volleytest.fragments.MainMenuFragment;
-import com.bengui.volleytest.R;
-import com.bengui.volleytest.fragments.UserGsonReqFragment;
-import com.bengui.volleytest.fragments.UserListFragment;
+import com.bengui.frankenstein.fragments.ImageScreenFragment;
+import com.bengui.frankenstein.fragments.MainMenuFragment;
+import com.bengui.frankenstein.R;
+import com.bengui.frankenstein.fragments.UserGsonReqFragment;
+import com.bengui.frankenstein.fragments.UserListFragment;
 
 public class MainActivity extends AppCompatActivity implements MainMenuFragment.MainMenuNavigation {
 

@@ -1,4 +1,4 @@
-package com.bengui.volleytest;
+package com.bengui.frankenstein;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

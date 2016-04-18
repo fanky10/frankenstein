@@ -1,5 +1,5 @@
 /* (c) Disney. All rights reserved. */
-package com.bengui.volleytest.models;
+package com.bengui.frankenstein.models;
 
 import com.google.gson.annotations.SerializedName;
 

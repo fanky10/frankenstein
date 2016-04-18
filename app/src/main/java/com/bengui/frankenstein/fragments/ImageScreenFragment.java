@@ -1,8 +1,6 @@
 /* (c) Disney. All rights reserved. */
-package com.bengui.volleytest.fragments;
+package com.bengui.frankenstein.fragments;
 
-import android.graphics.Bitmap;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -12,13 +10,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.android.volley.VolleyError;
 import com.android.volley.toolbox.ImageLoader;
-import com.android.volley.toolbox.ImageRequest;
-import com.bengui.volleytest.R;
-import com.bengui.volleytest.managers.VolleyManager;
+import com.bengui.frankenstein.R;
+import com.bengui.frankenstein.managers.VolleyManager;
 import com.squareup.picasso.Picasso;
-import com.squareup.picasso.Target;
 
 /**
  * @author benjamin.massello.

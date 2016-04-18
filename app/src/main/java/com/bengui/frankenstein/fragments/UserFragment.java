@@ -1,4 +1,4 @@
-package com.bengui.volleytest.fragments;
+package com.bengui.frankenstein.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -14,10 +14,10 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.bengui.volleytest.MyApplication;
-import com.bengui.volleytest.R;
-import com.bengui.volleytest.managers.VolleyManager;
-import com.bengui.volleytest.models.User;
+import com.bengui.frankenstein.MyApplication;
+import com.bengui.frankenstein.R;
+import com.bengui.frankenstein.managers.VolleyManager;
+import com.bengui.frankenstein.models.User;
 import com.google.gson.Gson;
 
 import org.json.JSONObject;

@@ -1,10 +1,9 @@
 /* (c) Disney. All rights reserved. */
-package com.bengui.volleytest;
+package com.bengui.frankenstein;
 
 import android.content.Context;
-import android.util.Log;
 
-import com.bengui.volleytest.managers.VolleyManager;
+import com.bengui.frankenstein.managers.VolleyManager;
 
 import javax.inject.Singleton;
 

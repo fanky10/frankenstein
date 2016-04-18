@@ -1,4 +1,4 @@
-package com.bengui.volleytest.fragments;
+package com.bengui.frankenstein.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.bengui.volleytest.R;
+import com.bengui.frankenstein.R;
 
 /**
  * @author benjamin.massello.
