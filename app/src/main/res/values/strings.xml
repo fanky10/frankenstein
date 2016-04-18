@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Volley Test</string>
+    <string name="app_name">Frankenstein</string>
     <string name="action_settings">Settings</string>
     <string name="request_btn">Obtener JSON</string>
     <string name="image_request_btn">Obtener Imagen</string>
