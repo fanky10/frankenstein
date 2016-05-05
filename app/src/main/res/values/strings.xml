@@ -9,4 +9,6 @@
     <string name="user_data_btn">User data</string>
     <string name="user_list_btn">User list</string>
     <string name="image_screen_btn">Image screen</string>
+    <string name="recycler_list_btn">Recycler list</string>
+
 </resources>

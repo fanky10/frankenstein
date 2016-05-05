@@ -29,10 +29,10 @@ public class MainMenuFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragmen_main_menu, null);
 
-        View.OnClickListener listenner = new View.OnClickListener(){
+        View.OnClickListener listenner = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (v.getId() == R.id.user_data_btn){
+                if (v.getId() == R.id.user_data_btn) {
 
                 }
             }
@@ -59,16 +59,25 @@ public class MainMenuFragment extends Fragment {
             }
         });
 
+        view.findViewById(R.id.recycle_list_btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mainMenuNavigation.navigateToRecyclerList();
+            }
+        });
+
         return view;
     }
 
-    public interface MainMenuNavigation{
+    public interface MainMenuNavigation {
 
         void navigateToUserData();
 
         void navigateToUserList();
 
         void navigateToImageScreen();
+
+        void navigateToRecyclerList();
 
     }
 

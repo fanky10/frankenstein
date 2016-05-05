@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 import com.bengui.frankenstein.fragments.ImageScreenFragment;
 import com.bengui.frankenstein.fragments.MainMenuFragment;
 import com.bengui.frankenstein.R;
+import com.bengui.frankenstein.fragments.RecyclerListFragment;
 import com.bengui.frankenstein.fragments.UserGsonReqFragment;
 import com.bengui.frankenstein.fragments.UserListFragment;
 
@@ -46,6 +47,12 @@ public class MainActivity extends AppCompatActivity implements MainMenuFragment.
     public void navigateToImageScreen() {
         ImageScreenFragment imageScreenFragment = new ImageScreenFragment();
         navigateTo(imageScreenFragment);
+    }
+
+    @Override
+    public void navigateToRecyclerList() {
+        RecyclerListFragment recyclerListFragment = new RecyclerListFragment();
+        navigateTo(recyclerListFragment);
     }
 
     /**

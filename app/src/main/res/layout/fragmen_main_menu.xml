@@ -22,5 +22,11 @@
         android:layout_height="wrap_content"
         android:text="@string/image_screen_btn"/>
 
+    <Button
+        android:id="@+id/recycle_list_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/recycler_list_btn"/>
+
 
 </LinearLayout>
