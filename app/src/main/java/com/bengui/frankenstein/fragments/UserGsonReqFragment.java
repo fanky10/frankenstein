@@ -17,6 +17,9 @@ import com.bengui.frankenstein.managers.GsonRequest;
 import com.bengui.frankenstein.managers.VolleyManager;
 import com.bengui.frankenstein.models.User;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 /**
  * @author benjamin.massello.
  */
@@ -24,31 +27,28 @@ public class UserGsonReqFragment extends Fragment {
     public static final String BASE_URL = "https://raw.githubusercontent.com/bengui/volleytest/master/json/user.json";
     public static final String TAG = UserFragment.class.getSimpleName();
 
-    private Button requestButton;
     private VolleyManager volleyManager;
-    private View view;
-    private TextView userNameTextView;
-    private TextView userLastNameTextView;
-    private TextView userAgeTextView;
+
+    //Views
+    @BindView(R.id.request_btn) Button requestButton;
+    @BindView(R.id.clean_btn) Button cleanButton;
+    @BindView(R.id.user_name) TextView userNameTextView;
+    @BindView(R.id.user_last_name) private TextView userLastNameTextView;
+    @BindView(R.id.user_age) private TextView userAgeTextView;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_user, null);
+        View view = inflater.inflate(R.layout.fragment_user, null);
+        ButterKnife.bind(this, view);
 
-        //User data on the UI
-        userNameTextView = (TextView) view.findViewById(R.id.user_name);
-        userLastNameTextView = (TextView) view.findViewById(R.id.user_last_name);
-        userAgeTextView = (TextView) view.findViewById(R.id.user_age);
-
-        requestButton = (Button) view.findViewById(R.id.request_btn);
         requestButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 getUserData();
             }
         });
-        Button cleanButton = (Button) view.findViewById(R.id.clean_btn);
+
         cleanButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -14,14 +14,17 @@ import android.view.ViewGroup;
 import com.bengui.frankenstein.R;
 import com.bengui.frankenstein.adapters.MyRecyclerAdapter;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 /**
  * @author benjamin.massello.
  */
 public class RecyclerListFragment extends Fragment {
 
 
-    private RecyclerView recyclerView;
-    private RecyclerView.LayoutManager layoutManager;
+    @BindView(R.id.my_recycler_view)
+    RecyclerView recyclerView;
     private String[] dataSet = new String[30];
 
     @Override
@@ -34,12 +37,11 @@ public class RecyclerListFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_recycler_list, null);
-        recyclerView = (RecyclerView) view.findViewById(R.id.my_recycler_view);
-
+        ButterKnife.bind(this, view);
         // use this setting to improve performance if you know that changes
         // in content do not change the layout size of the RecyclerView
         recyclerView.setHasFixedSize(true);
-        layoutManager = new LinearLayoutManager(getActivity());
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(layoutManager);
         MyRecyclerAdapter adapter = new MyRecyclerAdapter(dataSet);
         recyclerView.setAdapter(adapter);
