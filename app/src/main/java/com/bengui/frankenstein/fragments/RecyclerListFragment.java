@@ -31,7 +31,7 @@ public class RecyclerListFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_recycler_list, container);
+        View view = inflater.inflate(R.layout.fragment_recycler_list, null);
         recyclerView = (RecyclerView) view.findViewById(R.id.my_recycler_view);
 
         // use this setting to improve performance if you know that changes
